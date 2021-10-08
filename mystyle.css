@@ -1,0 +1,11 @@
+  /*Added color to h1 and p*/
+  h1 {
+    color: rgb(100, 33, 189);
+    color: hsl(52, 136, 52);
+    text-align: center;
+    
+  }
+  
+  p {
+    color:#ff6343;
+  }
