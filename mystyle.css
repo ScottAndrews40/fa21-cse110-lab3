@@ -21,3 +21,49 @@ ul {
   padding: .5em;
 }
 
+.block,
+li {
+  border: 2pt solid blue;
+  padding: .5ch;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}     
+
+.box {
+    width: 350px;
+    height: 150mm;
+    margin: 2em;
+    padding: .5em;
+    border: 5px solid black;
+  }
+  
+  .box_2 {
+    width: 350px;
+    height: 150mm;
+    margin-top: 1em;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    padding-left: .5em;
+    border: 5px solid black;
+  }
+
+  div {
+    width: 320px;
+    padding: .5cm;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 0%; 
+    margin: auto;
+  }
