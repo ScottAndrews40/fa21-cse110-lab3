@@ -8,7 +8,7 @@
 
         <meta name="description" 
         content="Meeting one for CSE110 group project.">
-
+        <link rel="stylesheet" href="mystyle.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -19,11 +19,11 @@
         <header>
             <h1>Brain Storming Session for Beer and Food</h1>
             <div>Meeting Start 10/2/2021 @ 3pm</div>
-            <nav>
+            <nav class="parent">
               <ul>
-                <li><a href="#Personnel">Personnel</a></li>
-                <li><a href="#ToDo">ToDo</a></li>
-                <li><a href="#subsribe">Subscribe</a></li>
+                <li class="child"><a href="#Personnel">Personnel</a></li>
+                <li class="child"><a href="#ToDo">ToDo</a></li>
+                <li class="child"><a href="#subsribe">Subscribe</a></li>
               </ul>
             </nav>
           </header>
@@ -33,22 +33,22 @@
             <h1 id="Personnel">Personnel</h1>
             <section>
                 <ol>
-                    <li>Scott Andrews</li>
-                    <li>Senior Dev Powell</li>
-                    <li>TA/Tutor Team</li>
+                    <li class="under">Scott Andrews</li>
+                    <li class="under">Senior Dev Powell</li>
+                    <li class="under">TA/Tutor Team</li>
                 </ol>
             </section>
             <h2 id="ToDo">TODO</h2>
-            <section>
+            <section class="container">
                 <ul>
                     <li>Addressed issues from previous meeting regarding proper diet.</li>
                     <li><strong>Find a good beer spot</strong></li>
                     <li>Find the <i>food spot</i></li>
-                    <li><em>that</em> <em>money</em> <em>hunny</em></li>
+                    <li><em>Get that</em> <em>money</em> <em>hunny</em></li>
                 </ul>
             </section>
-            <p>§1: <b class="term">Beer</b> spot == Mikkler SD, by unanimous decision!</p>
-            <p>§2: Food spot == Mr. Moto Pizza. Some dabate but 2/3 of votes were obtained.</p>
+            <div><p>§1: <b class="term">Beer</b> spot == Mikkler SD, by unanimous decision!</p>
+            <p>§2: Food spot == Mr. Moto Pizza. Some dabate but 2/3 of votes were obtained.</p></div>
             <hr>
 
             <img
@@ -89,8 +89,8 @@
           <footer>
             <h3 id="subscribe">Subscribe for meeting notifications!</h3>
             <form onsubmit="alert('Subscribed')">
-                <p>When should our net meeting be?</p>
-                <label for="start">Start date:</label>
+                <p class="parent">When should our net meeting be?</p>
+                <label class="container" for="start">Start date:</label>
 
                 <input type="date" id="start" name="meeting-start"
                     value="2021-01-11"
@@ -112,7 +112,7 @@
                 </fieldset>
                 <br>
                 
-                <p>Choose the beer style for the next meeting:</p>
+                <p class="container">Choose the beer style for the next meeting:</p>
 
                 <div>
                     <input type="checkbox" id="Stout" name="Stout">

@@ -1,0 +1,129 @@
+  /*Added color to h1 and p*/
+  h1 {
+    position:relative;
+    text-align: center;
+    color: rgb(100, 33, 189);
+    color: hsl(52, 136, 52);
+    text-align: center;
+  }
+  
+  h2 {
+    position: static;
+    display: inline;
+    background-color: black;
+    color: white;
+    height: 2em;
+    width: 2em;
+    max-width: 8em;
+    max-height: 15em;
+  }
+
+  p {
+    display: none;
+    color:#ff6343;
+  }
+
+  div:hover p {
+    display: block;
+  }
+
+  p, 
+ul {
+  border: 2ex solid rebeccapurple;
+  padding: .5em;
+}
+
+.block,
+li {
+  border: 2pt solid blue;
+  padding: .5ch;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}     
+
+.box {
+    width: 350px;
+    height: 150mm;
+    margin: 2em;
+    padding: .5em;
+    border: 5px solid black;
+}
+  
+.box_2 {
+    display: inline-block;
+    width: 70px;
+    height: 35mm;
+    margin-top: 1em;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    padding-left: .5em;
+    border: 5px solid black;
+}
+
+div {
+    width: 320px;
+    padding: .5cm;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 0%; 
+    margin: auto;
+}
+
+.under {
+    text-decoration: underline red;
+}
+
+a:link { color: blue; }          /* Unvisited links */
+a:visited { color: purple; }     /* Visited links */
+a:hover { background: yellow; }  /* Hovered links */
+a:active { color: red; }         /* Active links */
+p:active { background: #eee; }   
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 300px; 
+}
+  
+.child {
+    width: 100px; 
+    height: 100px; 
+    margin: auto;  
+}
+
+.item-a {
+    grid-area: header;
+}
+.item-b {
+    grid-area: main;
+}
+.item-c {
+    grid-area: sidebar;
+}
+.item-d {
+    grid-area: footer;
+}
+  
+.container {
+    display: grid;
+    grid-template-columns: auto-track-list;
+    grid-template-rows: auto-track-list;
+    grid-template-areas: 
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+}
+
