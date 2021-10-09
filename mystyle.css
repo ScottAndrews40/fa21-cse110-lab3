@@ -1,6 +1,7 @@
   /*Added color to h1 and p*/
   h1 {
     position:relative;
+    background-color: rgb(163, 165, 158);
     text-align: center;
     color: rgb(100, 33, 189);
     color: hsl(52, 136, 52);
@@ -18,10 +19,20 @@
     max-height: 15em;
   }
 
-  p {
+  @font-face {
+    font-family: 'zantrokeregular';
+    src: url('fonts/zantroke-webfont.woff2') format('woff2'),
+         url('fonts/zantroke-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    
+    font-family: 'zantrokeregular', serif;
     display: none;
     color:#ff6343;
-  }
+}
 
   div:hover p {
     display: block;
@@ -126,6 +137,7 @@ p:active { background: #eee; }
       "main main . sidebar"
       "footer footer footer footer";
 }
+
 
 
 
