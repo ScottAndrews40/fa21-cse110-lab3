@@ -83,7 +83,7 @@ ul {
     border: 5px solid black;
 }
   
-.box_2 {
+.box_2 > p > lu{
     display: inline-block;
     width: 70px;
     height: 35mm;
@@ -98,7 +98,7 @@ ul {
     border: 5px solid black;
 }
 
-div {
+div + p{
     width: 320px;
     padding: .5cm;
     border-width: 5px;
@@ -158,6 +158,12 @@ p:active { background: #eee; }
     font-family: 'zantrokeregular', serif;
 }
 
+#one {
+    background-color: yellow;
+}
 
+h1#heading {
+    color: rebeccapurple;
+}
 
 
