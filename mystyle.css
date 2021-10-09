@@ -1,5 +1,6 @@
   /*Added color to h1 and p*/
   h1 {
+    text-align: center;
     color: rgb(100, 33, 189);
     color: hsl(52, 136, 52);
     text-align: center;
@@ -12,6 +13,10 @@
 
     background-color: black;
     color: white;
+    height: 2em;
+    width: 2em;
+    max-width: 8em;
+    max-height: 15em;
   }
 
   p {
@@ -72,6 +77,9 @@ div {
     border-color: gray;
     border-radius: 0%; 
     margin: auto;
-
-}
+  
+.under {
+    text-decoration: underline red;
+  }
+  
 
