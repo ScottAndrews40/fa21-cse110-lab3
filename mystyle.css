@@ -46,8 +46,6 @@ body {
 }
 
 p {
-    
-    font-family: 'zantrokeregular', serif;
     display: none;
     color:#ff6343;
 }
@@ -154,6 +152,10 @@ p:active { background: #eee; }
       "header header header header"
       "main main . sidebar"
       "footer footer footer footer";
+}
+
+* { 
+    font-family: 'zantrokeregular', serif;
 }
 
 
