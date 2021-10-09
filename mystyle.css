@@ -8,7 +8,7 @@
   }
   
   h2 {
-    position:fixed;
+    position: static;
     display: inline;
     background-color: black;
     color: white;
@@ -19,7 +19,12 @@
   }
 
   p {
+    display: none;
     color:#ff6343;
+  }
+
+  div:hover p {
+    display: block;
   }
 
   p, 
@@ -78,6 +83,49 @@ div {
 
 .under {
     text-decoration: underline red;
-  }
+}
+
+a:link { color: blue; }          /* Unvisited links */
+a:visited { color: purple; }     /* Visited links */
+a:hover { background: yellow; }  /* Hovered links */
+a:active { color: red; }         /* Active links */
+p:active { background: #eee; }   
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 300px; 
+}
   
+.child {
+    width: 100px; 
+    height: 100px; 
+    margin: auto;  
+}
+
+.item-a {
+    grid-area: header;
+}
+.item-b {
+    grid-area: main;
+}
+.item-c {
+    grid-area: sidebar;
+}
+.item-d {
+    grid-area: footer;
+}
+  
+.container {
+    display: grid;
+    grid-template-columns: auto-track-list;
+    grid-template-rows: auto-track-list;
+    grid-template-areas: 
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+}
+
+
 
